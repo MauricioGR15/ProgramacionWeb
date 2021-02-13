@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+       <div id="main">
+           <h1 v-if="conectado">Estas conectado</h1>
+           <p v-if="edad >= 18">Eres mayor de 18</p>
+           <p v-else="edad">Eres menor de 18</p>
+           <hr>
+           <h2>Renderizado de listas</h2>
+           <p>{{lista}}</p>
+           <ul>
+               <li v-for="item in lista">
+                    {{item}}
+               </li>
+           </ul>
+           <hr>
+           <ul>
+               <li v-for="item in listaPersonas">
+                    {{item.nombre}} - {{item.edad}}
+               </li>
+           </ul>
+       </div> 
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="src.js"></script>
+</html>
