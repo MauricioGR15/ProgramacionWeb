@@ -38,7 +38,7 @@ nav ul {
     list-style: none;
     text-transform: uppercase;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem 2rem 0 2rem;
     border-left: 3px solid var(--pink);
     margin: 0;
@@ -78,7 +78,7 @@ section {
 .title-page {
     text-align: center;
     color: var(--blue);
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     margin: 0;
 }
@@ -86,12 +86,12 @@ section {
 .text-page {
     color: var(--pink);
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .imagen-circular {
-    width: 90%;
+    height: 40vw;
     border-radius: 50%;
     border: 5px solid var(--orange);
 }
