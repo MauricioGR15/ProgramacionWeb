@@ -1,0 +1,30 @@
+
+#footer {
+    border-top: 2px solid var(--verde);
+    width: 100vw;
+    /* height: 8%; */
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 2rem;
+}
+
+.logos img {
+    height: 3rem;
+}
+
+.azulito{
+    color: var(--azul);
+}
+
+.direccion {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+.direccion p {
+    margin: 0;
+}
