@@ -3,7 +3,7 @@
         <button @click="getDatoRandom">
             Obtener dato random
         </button>
-        <p>{{datoRandom.text}}</p>
+        <p v-if="datoRandom">{{datoRandom.text === null ? 'Nada' : datoRandom.text}}</p>
     </div>
 </template>
 

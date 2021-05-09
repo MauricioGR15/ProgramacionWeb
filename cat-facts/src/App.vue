@@ -1,32 +1,58 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/dato-random">Dato Random</router-link>
+    <div id="app">
+        <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/dato-random">Dato Random</router-link>
+        </div>
+        <div id="wrapper">
+          <router-view />
+          </div>
     </div>
-    <router-view/>
-  </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+    background-color: black;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#nav a:hover {
+    animation: navAnimation 1s ease-in-out both;
 }
+
+#wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes navAnimation {
+    100% {
+        color: violet;
+        font-size: 1.6rem;
+    }
+}
+
+
 </style>
