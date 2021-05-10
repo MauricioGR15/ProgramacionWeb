@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .card {
   height: auto;
   width: 500px;
@@ -43,7 +43,7 @@ export default {
 }
 
 .card:hover {
-  animation: zoom-card 2s ease both
+  animation: shadow-card 2s ease both
 }
 
 .card a {
@@ -53,10 +53,9 @@ export default {
 
 .card p {
   color: darkorchid;
-  font-size: 0.9rem;
 }
 
-@keyframes zoom-card {
+@keyframes shadow-card {
   50%{
     box-shadow: 4px 4px 0.8rem rgba(125,125,125,0.7);
   }

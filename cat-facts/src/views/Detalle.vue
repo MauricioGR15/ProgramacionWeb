@@ -1,6 +1,10 @@
 <template>
-  <div class="home">
-    {{dato.text}}
+  <div class="card">
+    <p class="id">{{`ID: ${dato._id} `}}</p>
+    <h4>Fact</h4>
+    <p class="text">{{dato.text}}</p>
+    <h4>Fecha de creación</h4>
+    <p>{{dato.createdAt}}</p>
   </div>
 </template>
 
@@ -24,3 +28,23 @@ export default {
   }
 }
 </script>
+
+<style>
+
+h4 {
+  font-size: 0.8rem;
+}
+
+.id{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.text{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: purple;
+}
+
+
+</style>
